@@ -41,8 +41,8 @@ function DashboardSidebar() {
            <span>Components</span>
            </a>
            <ul className="dropdown-menu">
-             <li><a className="dropdown-item" href="./buttons">buttons</a></li>
-             <li><a className="dropdown-item" href="./Cards">Cards</a></li>
+             <li><a className="dropdown-item" href="/buttons">buttons</a></li>
+             <li><a className="dropdown-item" href="/Cards">Cards</a></li>
            </ul>
         </li>
 
@@ -53,10 +53,10 @@ function DashboardSidebar() {
           <span>Utilities</span>
           </a>
           <ul class="dropdown-menu">
-            <li><a className="dropdown-item" href="./Colors">Colors</a></li>
-            <li><a className="dropdown-item" href="./Borders">Borders</a></li>
-            <li><a className="dropdown-item" href="./Animation">Animation</a></li>
-            <li><a className="dropdown-item" href="./Other">Other</a></li>
+            <li><a className="dropdown-item" href="/Colors">Colors</a></li>
+            <li><a className="dropdown-item" href="/Borders">Borders</a></li>
+            <li><a className="dropdown-item" href="/Animation">Animation</a></li>
+            <li><a className="dropdown-item" href="/Other">Other</a></li>
             
           </ul>
         </li>

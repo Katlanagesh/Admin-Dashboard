@@ -24,7 +24,7 @@ function App() {
     <Switch>
       {/* <!-- login page -->  */}
 
-      <Route path="/Login">
+      <Route exact path="/Login">
         <Login />
       </Route>
 
