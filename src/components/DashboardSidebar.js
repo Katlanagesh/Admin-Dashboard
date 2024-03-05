@@ -33,33 +33,42 @@ function DashboardSidebar() {
         Interface
     </div>
 
-   
-    <li class="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#"
-           role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           <i className="fas fa-fw fa-cog"></i>
-           <span>Components</span>
-           </a>
-           <ul className="dropdown-menu">
-             <li><a className="dropdown-item" href="/buttons">buttons</a></li>
-             <li><a className="dropdown-item" href="/Cards">Cards</a></li>
-           </ul>
-        </li>
+<li className="nav-item">
+        <a className="nav-link dropdown-toggle" href="#collapseTwo" data-bs-toggle="collapse" 
+            aria-expanded="false" aria-controls="collapseUtilities">
+            <i className="fas fa-fw fa-cog"></i>
+            <span>Components</span>
+        </a>
+        <div id="collapseTwo" className="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div className="bg-white py-2 collapse-inner rounded">
+                <h6 className="collapse-header">Custom Utilities:</h6>
+                <Link className="collapse-item" to="/buttons">Buttons</Link>
+                <Link className="collapse-item" to="/cards">Cards</Link>
+            </div>
+        </div>
+    </li>
 
+   
+            <li className="nav-item">
+        <a className="nav-link dropdown-toggle" href="#collapseUtilities" data-bs-toggle="collapse" 
+            aria-expanded="false" aria-controls="collapseUtilities">
+            <i className="fas fa-fw fa-wrench"></i>
+            <span>Utilities</span>
+        </a>
+        <div id="collapseUtilities" className="collapse" aria-labelledby="headingUtilities"
+            data-parent="#accordionSidebar">
+            <div className="bg-white py-2 collapse-inner rounded">
+                <h6 className="collapse-header">Custom Utilities:</h6>
+                <Link className="collapse-item" to="/Colors">Colors</Link>
+                <Link className="collapse-item" to="/Borders">Borders</Link>
+                <Link className="collapse-item" to="/Animation">Animations</Link>
+                <Link className="collapse-item" to="/Other">Other</Link>
+            </div>
+        </div>
+    </li>
   
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i className="fas fa-fw fa-wrench"></i>
-          <span>Utilities</span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a className="dropdown-item" href="/Colors">Colors</a></li>
-            <li><a className="dropdown-item" href="/Borders">Borders</a></li>
-            <li><a className="dropdown-item" href="/Animation">Animation</a></li>
-            <li><a className="dropdown-item" href="/Other">Other</a></li>
-            
-          </ul>
-        </li>
+       
 
  
     <hr className="sidebar-divider"/>
@@ -70,19 +79,25 @@ function DashboardSidebar() {
     </div>
 
     
-    <li className="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i className="fas fa-fw fa-folder"></i><span>Pages</span>
-          </a>
-          <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="./Login">Login</a></li>
-            <li><a className="dropdown-item" href="./Register">Register</a></li>
-            <li><a className="dropdown-item" href="./Forgot">Forgot Password</a></li>
-            <li><a className="dropdown-item" href="./404">404 Page</a></li>
-            <li><a className="dropdown-item" href="./Blank">Blank Page</a></li>
-          </ul>
-        </li>
-      
+        <li className="nav-item">
+        <a className="nav-link dropdown-toggle" href="#collapsePages" data-bs-toggle="collapse" data-target="#collapsePages"
+            aria-expanded="true" aria-controls="collapsePages">
+            <i className="fas fa-fw fa-folder"></i>
+            <span>Pages</span>
+        </a>
+        <div id="collapsePages" className="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+            <div className="bg-white py-2 collapse-inner rounded">
+                <h6 className="collapse-header">Login Screens:</h6>
+                <Link className="collapse-item" to="/Login">Login</Link>
+                <Link className="collapse-item" to="/Register">Register</Link>
+                <Link className="collapse-item" to="/Forgot">Forgot Password</Link>
+                <div className="collapse-divider"></div>
+                <h6 className="collapse-header">Other Pages:</h6>
+                <Link className="collapse-item" to="/404">404 Page</Link>
+                <Link className="collapse-item" to="/Blank">Blank Page</Link>
+            </div>
+        </div>
+    </li>
 
    
     <li className="nav-item">

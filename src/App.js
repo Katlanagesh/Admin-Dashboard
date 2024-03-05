@@ -46,18 +46,18 @@ function App() {
 
       {/* <!-- register page -->  */}
 
-      <Route path="/Register">
+      <Route exact path="/Register">
         <Register />
       </Route>
       {/* <!-- forgot-password page -->  */}
 
-      <Route path="/Forgot">
+      <Route exact path="/Forgot">
         <Forgot />
       </Route>
 
       {/* <!-- utilities-404 page -->  */}
 
-      <Route path="/404">
+      <Route exact path="/404">
         <Error />
       </Route>
 
@@ -141,7 +141,7 @@ function App() {
  
           </div>
           <Footer/>
-          
+
         </div>
        
               
